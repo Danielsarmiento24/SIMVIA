@@ -13,9 +13,6 @@ Proveer todo el soporte técnico y científico (código, hardware, modelos, dato
 - `docs/` — Diagramas, metodología, normas y referencias académicas.
 - `hardware/` — Esquemáticos, Detalles de hardware,  diseños de carcasa.
 - `software/` — Código modular (edge, visión, comunicación, API, utilidades).
-- `data/` — Datasets (raw, procesados), anotaciones y metadatos (política de privacidad).
-- `models/` — Configuraciones y pesos (pretrained / entrenados) y scripts de conversión.
-- `experiments/` — Experimentos documentados (objetivos, configuración, resultados).
 - `results/` — Métricas, gráficas, tablas y logs reproducibles.
 - `deployment/` — Guía de instalación en campo, configuración y mantenimiento.
 
