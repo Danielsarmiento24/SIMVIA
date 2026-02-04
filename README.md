@@ -1,4 +1,4 @@
-# hardware — Diseño y especificaciones electrónicas
+# Hardware — Diseño y especificaciones electrónicas
 
 **Propósito:** Documentar selección, esquemáticos, cálculos eléctricos, BOM y diseño mecánico del prototipo.
 
