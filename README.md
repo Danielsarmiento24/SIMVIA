@@ -14,7 +14,6 @@ Proveer todo el soporte técnico y científico (código, hardware, modelos, dato
 - `hardware/` — Esquemáticos, Detalles de hardware,  diseños de carcasa.
 - `software/` — Código modular (edge, visión, comunicación, API, utilidades).
 - `results/` — Métricas, gráficas, tablas y logs reproducibles.
-- `deployment/` — Guía de instalación en campo, configuración y mantenimiento.
 
 ---
 
