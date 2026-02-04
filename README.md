@@ -1,6 +1,5 @@
 # SIMVIA — Sistema Inteligente de Monitoreo Vehicular
 
-**Resumen **  
 SIMVIA es un prototipo reproducible de monitoreo vehicular portátil basado en visión por computador e inteligencia artificial, diseñado para flujo vehicular en entornos urbanos con criterios de privacidad (no almacenamiento de imágenes) y operación en edge devices.
 
 ---
