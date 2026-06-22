@@ -16,17 +16,6 @@ docs/
 │   ├── capitulo4_conclusiones.tex
 │   ├── capitulo5_recomendaciones.tex
 │   └── referencias.bib           → Referencias bibliográficas (APA)
-├── figuras/
-│   ├── arquitectura/             → Diagramas de arquitectura del sistema
-│   ├── carcasa/                  → Renders e imágenes de la carcasa
-│   ├── pruebas/                  → Capturas de pantalla de pruebas
-│   └── yolo/                     → Gráficas de entrenamiento del modelo
-├── tablas/
-│   └── tablas_capitulo2.tex      → Tablas de comparación (LaTeX)
-└── matrices/
-    ├── matriz1_seleccion_yolo.png
-    ├── matriz2_plataforma_edge.png
-    └── matriz3_algoritmo_tracking.png
 ```
 
 ---
