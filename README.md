@@ -72,7 +72,6 @@ Contenido de Drive:
 | `docs` | Informe LaTeX, figuras y documentación |
 | `hardware` | Planos, esquemas y especificaciones físicas |
 | `software` | Código fuente del sistema SIMVIA |
-| `models` | Modelo entrenado y configuración |
 | `results` | Resultados experimentales y validaciones |
 
 ---
