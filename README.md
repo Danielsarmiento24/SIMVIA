@@ -1,49 +1,99 @@
 # SIMVIA — Sistema Inteligente de Monitoreo Vehicular
 
-SIMVIA es un prototipo reproducible de monitoreo vehicular portátil basado en visión por computador e inteligencia artificial, diseñado para flujo vehicular en entornos urbanos con criterios de privacidad (no almacenamiento de imágenes) y operación en edge devices.
+> Prototipo de monitoreo vehicular basado en inteligencia artificial y computación en el borde (Edge AI), desarrollado como Trabajo de Grado en la Escuela de Ingenierías Eléctrica, Electrónica y Telecomunicaciones — E3T, Universidad Industrial de Santander.
 
 ---
 
-## Objetivo del repositorio
-Proveer todo el soporte técnico y científico (código, hardware, modelos, datos, experimentos y documentación) necesario para reproducir y validar el sistema propuesto en la tesis: *Sistema Inteligente para Monitoreo Vehicular con Inteligencia Artificial*.
+## ¿Qué es SIMVIA?
+
+SIMVIA es un sistema embebido portátil capaz de detectar, clasificar y contar vehículos en tiempo real mediante visión computacional, sin almacenar imágenes ni videos. El procesamiento ocurre íntegramente en el dispositivo (Raspberry Pi 5), transmitiendo únicamente datos estadísticos agregados a una plataforma de visualización.
+
+**Funciones principales:**
+- Detección y clasificación vehicular en tiempo real (automóviles y motocicletas)
+- Conteo vehicular mediante líneas virtuales de referencia
+- Estimación de velocidad por puntos de referencia físicos
+- Transmisión de datos a plataforma de visualización
+- Carcasa en acero galvanizado con protección para intemperie
 
 ---
 
-## Contenido principal
-- `docs/` — Diagramas, metodología, normas y referencias académicas.
-- `hardware/` — Esquemáticos, Detalles de hardware,  diseños de carcasa.
-- `software/` — Código modular (edge, visión, comunicación, API, utilidades).
-- `results/` — Métricas, gráficas, tablas y logs reproducibles.
+## Estructura del repositorio
+
+```
+SIMVIA/
+├── docs/           → Informe final, diagramas y documentación técnica
+├── hardware/       → Planos de carcasa, esquemas eléctricos y lista de componentes
+├── software/       → Código fuente del sistema (detección, conteo, velocidad, transmisión)
+└── results/        → Métricas, pruebas de validación y datos experimentales
+```
 
 ---
 
-## Mapa rápido para reproducibilidad
-1. Revisar `docs/methodology/README.md`.  
-2. Obtener datos (ver `data/README.md` y política de privacidad).  
-3. Ejecutar entorno (ver `software/edge/README.md` y `software/vision/README.md`).  
-4. Correr experimentos en `experiments/` (cada experimento incluye `notebook`).  
-5. Resultados y métricas en `results/`.
+## Recursos complementarios
+
+Los archivos de gran tamaño (videos de prueba, dataset completo, renders 3D) se encuentran en:
+
+ **[Carpeta de Anexos en Google Drive](https://drive.google.com/drive/folders/17pgdPkkZd47S0xBEOZMQ_ufsW0VNBBb1?usp=sharing)**
+
+Contenido de Drive:
+- Videos de pruebas de campo (puente peatonal Centro Comercial Cacique)
+- Dataset completo de entrenamiento
+- Renders 3D de la carcasa (Onshape)
+- Videos de pruebas de impermeabilidad y control térmico
 
 ---
 
-## Requisitos (resumen)
-- Python 3.8+ (entorno virtual recomendado).  
-- Frameworks: PyTorch/TensorFlow según configuración del modelo (ver `models/configs/`).  
-- Herramientas de edge: guías para Rapsberry Pi 5.  
-- Dependencias en `software/requirements.txt`.
+## Hardware principal
 
----
----
-
-## Ética, privacidad y legalidad
-- El proyecto evita almacenar imágenes o video por defecto.  
-
+| Componente | Descripción |
+|---|---|
+| Raspberry Pi 5 | Unidad de procesamiento principal (Edge AI) |
+| Cámara | Captura de video en tiempo real |
+| Sensor DHT11 | Monitoreo de temperatura interior |
+| Ventiladores Foxconn | Control térmico activo |
+| Carcasa acero galvanizado | Protección para instalación exterior |
 
 ---
 
-## Contacto
-Autores: Daniel Felipe Sarmiento Pilonieta & Sebastian Adolfo Albornoz Villamil  
-Director: Jeyson Arley Castillo Bohorquez  
-Codirector:Jaime Guillermo Barrero Perez
+## Tecnologías utilizadas
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![YOLO](https://img.shields.io/badge/YOLO-Ultralytics-orange)
+![Raspberry Pi](https://img.shields.io/badge/Hardware-Raspberry%20Pi%205-red)
+![Roboflow](https://img.shields.io/badge/Dataset-Roboflow-purple)
+
+---
+
+## Ramas del repositorio
+
+| Rama | Contenido |
+|---|---|
+| `main` | Rama principal — versión estable e integrada |
+| `docs` | Informe LaTeX, figuras y documentación |
+| `hardware` | Planos, esquemas y especificaciones físicas |
+| `software` | Código fuente del sistema SIMVIA |
+| `models` | Modelo entrenado y configuración |
+| `results` | Resultados experimentales y validaciones |
+
+---
+
+## Autores
+
+**Daniel Felipe Sarmiento Pilonieta** 
+**Sebastian Adolfo Albornoz Villamil  ** 
+
+**Director:** Jeyson Arley Castillo Bohorquez
+**Codirector:** Jaime Guillermo Barrero Perez
+**Universidad Industrial de Santander ** 
+**Escuela:** E3T — Ingeniería Electrónica / Eléctrica / Telecomunicaciones  
+**Año:** 2026
+
+---
+
+## Licencia
+
+Este proyecto fue desarrollado con fines académicos en la Universidad Industrial de Santander.  
+Para uso o reproducción del sistema contactar a los autores.
+
 
 ---
