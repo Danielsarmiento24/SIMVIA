@@ -78,14 +78,19 @@ Contenido de Drive:
 
 ## Autores
 
-**Daniel Felipe Sarmiento Pilonieta** 
-**Sebastian Adolfo Albornoz Villamil  ** 
+**Daniel Felipe Sarmiento Pilonieta**  
+**Sebastian Adolfo Albornoz Villamil**
 
-**Director:** Jeyson Arley Castillo Bohorquez
-**Codirector:** Jaime Guillermo Barrero Perez
-**Universidad Industrial de Santander ** 
-**Escuela:** E3T — Ingeniería Electrónica / Eléctrica / Telecomunicaciones  
-**Año:** 2026
+### Dirección
+
+- **Director:** Jeyson Arley Castillo Bohorquez  
+- **Codirector:** Jaime Guillermo Barrero Perez  
+
+### Institución
+
+- **Universidad:** Universidad Industrial de Santander (UIS)  
+- **Escuela:** E3T — Ingeniería Electrónica / Eléctrica / Telecomunicaciones  
+- **Año:** 2026
 
 ---
 
