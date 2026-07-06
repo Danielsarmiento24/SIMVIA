@@ -1,4 +1,4 @@
-# SIMVIA — Sistema Inteligente de Monitoreo Vehicular
+# SIMVIA —Sistema inteligente para monitoreo vehicular con inteligencia artificial
 
 > Prototipo de monitoreo vehicular basado en inteligencia artificial y computación en el borde (Edge AI), desarrollado como Trabajo de Grado en la Escuela de Ingenierías Eléctrica, Electrónica y Telecomunicaciones — E3T, Universidad Industrial de Santander.
 
