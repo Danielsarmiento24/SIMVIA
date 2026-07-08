@@ -1,71 +1,86 @@
-# SIMVIA / hardware — Diseño Físico y Electrónico
+# SIMVIA / Hardware — Diseño Físico y Electrónico
 
-Esta rama contiene todos los archivos relacionados con el diseño físico del prototipo SIMVIA: planos de la carcasa, esquemas electrónicos, lista de materiales y especificaciones de instalación.
+Esta rama reúne los archivos relacionados con el diseño físico y electrónico del prototipo **SIMVIA**, incluyendo los planos de fabricación de la carcasa, fotografías de los prototipos, modelos de soporte para los componentes electrónicos y documentación técnica utilizada durante el desarrollo.
 
 ---
 
-## Estructura
+## Contenido de la rama
 
-```
+```text
 hardware/
-├── carcasa/
-│   ├── planos/
-│   │   ├── carcasa_v1.pdf        → Planos técnicos primera versión
-│   │   └── carcasa_v2.pdf        → Planos técnicos versión final
-│   ├── onshape/
-│   │   └── enlace_onshape.md     → Enlace al modelo 3D en Onshape
-│   └── fotos/
-│       ├── version1/             → Fotografías primera versión fabricada
-│       └── version2/             → Fotografías versión final
-├── electronica/
-│   ├── esquema_conexiones.pdf    → Diagrama de conexiones eléctricas
-│   └── lista_componentes.md      → BOM (Bill of Materials)
-└── instalacion/
-    └── guia_instalacion.md       → Instrucciones de montaje en campo
+├── Fotos Prototipos/
+│   ├── Prototipo 1
+│   └── Prototipo 2
+│
+├── Plano de la carcasa
+│
+├── Modelo soporte Raspberry Pi
+│
+└── Tabla de protección IP
 ```
 
 ---
 
-## Especificaciones de la carcasa
+## Contenido
 
-| Característica | Valor |
-|---|---|
-| Material principal | Acero galvanizado |
-| Dimensiones (L × A × H) | ~30 cm × 20 cm × 20–25 cm |
-| Protección IP | IP65 (objetivo de diseño) |
-| Sistema de fijación | Abrazaderas para poste o puente |
-| Cubierta superior | Inclinada para evacuación de agua |
-| Plataforma interna | Elevada ~3 cm sobre la base |
-| Versiones fabricadas | 2 (iteración de diseño) |
+### Fotografías de los prototipos
+
+La carpeta **Fotos Prototipos** contiene imágenes de las dos versiones fabricadas del sistema SIMVIA. Ambas utilizan el mismo diseño general de la carcasa; las modificaciones realizadas durante el desarrollo se centraron principalmente en:
+
+* Sistema de bisagras.
+* Soportes internos para los componentes.
+* Mejoras en el montaje y ensamblaje.
 
 ---
 
-## Lista de componentes principales (BOM)
+### Plano de la carcasa
 
-| Componente | Cantidad | Función |
-|---|---|---|
-| Raspberry Pi 5 (8GB) | 1 | Unidad de procesamiento |
-| Cámara | 1 | Captura de video |
-| Sensor DHT11 | 1 | Temperatura y humedad interior |
-| Ventilador Foxconn | 2 | Control térmico activo |
-| Fuente de alimentación | 1 | Alimentación del sistema |
-| Acero galvanizado | — | Carcasa exterior |
+Se incluyen el plano técnicos de fabricación de la carcasa con sus principales vistas:
 
-> Costo total del prototipo: aproximadamente **$1.401.668 COP**  
-> Ver desglose completo en  [Google Drive — Anexos](https://drive.google.com/drive/folders/17pgdPkkZd47S0xBEOZMQ_ufsW0VNBBb1?usp=sharing)
+* Vista frontal.
+* Vista lateral.
+* Vista isométrica.
+
+Este plano corresponden al diseño mecánico utilizado para la fabricación del prototipo.
 
 ---
 
-## Evolución del diseño — v1 vs v2
+### Modelo del soporte para Raspberry Pi
 
-### Versión 1 — Problemas identificados
-- Pestaña de sellado subdimensionada (riesgo de filtración)
-- Bisagras sobredimensionadas (peso excesivo)
-- Aro de aseguramiento sobredimensionado
-
-### Versión 2 — Correcciones aplicadas
-- Rediseño completo del sistema de sellado
-- Bisagras de perfil reducido
-- Sistema de cierre optimizado en peso y estética
+Se incluye el modelo del soporte diseñado para fijar la Raspberry Pi dentro de la carcasa, facilitando su instalación y mantenimiento.
 
 ---
+
+### Protección IP
+
+La rama también contiene una tabla de referencia sobre los diferentes grados de protección IP utilizados durante el proceso de selección del diseño de la carcasa, como apoyo para definir el nivel de protección requerido frente al polvo y al agua.
+
+---
+
+## Especificaciones generales de la carcasa
+
+| Característica          | Descripción                                              |
+| ----------------------- | -------------------------------------------------------- |
+| Material principal      | Acero galvanizado                                        |
+| Dimensiones aproximadas | 30 × 20 × 20–25 cm                                       |
+| Instalación             | Montaje sobre poste mediante abrazaderas                 |
+| Cubierta superior       | Inclinada para facilitar el drenaje del agua             |
+| Plataforma interna      | Soporte elevado para los componentes electrónicos        |
+| Versiones fabricadas    | 2 prototipos con mejoras en bisagras y soportes internos |
+
+---
+
+## Componentes principales
+
+* Raspberry Pi 5
+* Cámara USB
+* Sensor DHT11
+* Ventiladores de refrigeración
+* Fuente de alimentación
+* Carcasa metálica en acero galvanizado
+
+---
+
+## Notas
+
+Los dos prototipos conservan el mismo diseño estructural de la carcasa. Las mejoras implementadas durante el desarrollo estuvieron enfocadas en optimizar las bisagras, los soportes internos y el proceso de ensamblaje, manteniendo la geometría general del diseño.
