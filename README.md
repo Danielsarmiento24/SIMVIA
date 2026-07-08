@@ -1,8 +1,8 @@
-# SIMVIA - Sistema Inteligente para el Monitoreo Vehicular
+# SIMVIA - Sistema Inteligente para el Monitoreo Vehicular con Inteligencia Artificial
 
 ## Descripción
 
-Este repositorio contiene el código fuente y los archivos de desarrollo utilizados en el proyecto **SIMVIA (Sistema Inteligente para el Monitoreo Vehicular)**.
+Este repositorio contiene el código fuente y los archivos de desarrollo utilizados en el proyecto **SIMVIA (Sistema Inteligente para el Monitoreo Vehicular con Inteligencia Artificial)**.
 
 El objetivo del proyecto es desarrollar un sistema portátil basado en visión por computador para el monitoreo del flujo vehicular, capaz de detectar y procesar información del tránsito utilizando una Raspberry Pi y otros dispositivos electrónicos.
 
