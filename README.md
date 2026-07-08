@@ -1,109 +1,102 @@
-# SIMVIA / software — Código Fuente del Sistema
+# SIMVIA - Sistema Inteligente para el Monitoreo Vehicular
 
-Esta rama contiene el código fuente completo del sistema SIMVIA: detección vehicular, conteo, estimación de velocidad, clasificación y transmisión de datos.
+## Descripción
 
----
+Este repositorio contiene el código fuente y los archivos de desarrollo utilizados en el proyecto **SIMVIA (Sistema Inteligente para el Monitoreo Vehicular)**.
 
-## Estructura
+El objetivo del proyecto es desarrollar un sistema portátil basado en visión por computador para el monitoreo del flujo vehicular, capaz de detectar y procesar información del tránsito utilizando una Raspberry Pi y otros dispositivos electrónicos.
 
-```
-software/
-├── src/
-│   ├── main.py                   → Punto de entrada del sistema
-│   ├── detector.py               → Módulo de detección YOLO
-│   ├── tracker.py                → Módulo de seguimiento de objetos
-│   ├── counter.py                → Módulo de conteo vehicular (líneas virtuales)
-│   ├── speed_estimator.py        → Módulo de estimación de velocidad
-│   ├── classifier.py             → Módulo de clasificación vehicular
-│   └── transmitter.py            → Módulo de transmisión de datos
-├── config/
-│   ├── config.yaml               → Configuración general del sistema
-│   └── camera_config.yaml        → Parámetros de cámara y puntos de referencia
-├── utils/
-│   ├── visualization.py          → Funciones de visualización (bounding boxes, líneas)
-│   └── logger.py                 → Sistema de registro de eventos
-├── tests/
-│   └── test_counter.py           → Pruebas unitarias del contador
-├── requirements.txt              → Dependencias del proyecto
-└── setup.sh                      → Script de instalación en Raspberry Pi
-```
+Este repositorio corresponde a una rama de desarrollo donde se almacenan tanto los códigos utilizados durante la etapa de experimentación en Google Colab como la implementación realizada para la Raspberry Pi.
 
 ---
 
-## Requisitos del sistema
+## Estructura del repositorio
 
-**Hardware:**
-- Raspberry Pi 5 (recomendado 8 GB RAM)
-- Cámara compatible (USB o CSI)
-- Conexión a internet (para transmisión de datos)
+```text
+.
+├── SIMVIA Codes/
+│   ├── benchmark/
+│   ├── calibrar/
+│   ├── dht11/
+│   ├── fans/
+│   └── servidor/
+│
+├── notebooks y códigos de prueba (Google Colab)
+└── demás archivos del proyecto
+```
 
-**Software:**
-```
-Python 3.10+
-ultralytics >= 8.0
-opencv-python >= 4.8
-numpy
-pyyaml
-requests  # o paho-mqtt según protocolo usado
-```
+### Carpeta `SIMVIA Codes`
+
+Contiene los programas utilizados durante la implementación del sistema en la Raspberry Pi.
+
+* **benchmark/**
+  Scripts para pruebas de rendimiento del sistema.
+
+* **calibrar/**
+  Herramientas para la calibración del sistema de visión.
+
+* **dht11/**
+  Código para la adquisición de datos del sensor de temperatura y humedad DHT11.
+
+* **fans/**
+  Control de los ventiladores del sistema de refrigeración.
+
+* **servidor/**
+  Código relacionado con la comunicación y los servicios del sistema.
 
 ---
 
-## Instalación
+## Código de desarrollo
 
-```bash
-# 1. Clonar solo esta rama
-git clone --branch software https://github.com/tu-usuario/SIMVIA.git
-cd SIMVIA
-
-# 2. Instalar dependencias
-pip install -r requirements.txt
-
-# 3. Configurar parámetros del sistema
-nano config/config.yaml
-
-# 4. Ejecutar el sistema
-python src/main.py
-```
+Además del código para Raspberry Pi, esta rama incluye los diferentes scripts y notebooks utilizados durante las pruebas realizadas en Google Colab para el desarrollo y validación del sistema de visión por computador.
 
 ---
 
-## Configuración de puntos de referencia
+## Aplicación móvil
 
-Los puntos de referencia para conteo y velocidad se definen en `config/camera_config.yaml`:
+Debido al tamaño del archivo, el APK de la aplicación móvil no pudo incluirse en este repositorio.
 
-```yaml
-reference_points:
-  point_a: [x1, y1]   # Punto de entrada (píxeles)
-  point_b: [x2, y2]   # Punto de salida (píxeles)
-  real_distance_m: 5.0 # Distancia física real entre puntos (metros)
+La aplicación, junto con una copia de los archivos presentes en esta rama, se encuentra disponible en el siguiente enlace de Google Drive:
 
-counting_line:
-  y_position: 300      # Posición vertical de la línea de conteo
-```
+**Google Drive:**
+https://drive.google.com/drive/folders/1zFFVwwUpDTDrV12DXUrM64vOX4AuEEjR?usp=sharing
 
 ---
 
-## Modelo utilizado
+## Requisitos generales
 
-El modelo entrenado (archivo `.pt`) se encuentra en la rama `models`.  
-Descargar y colocar en `software/models/simvia_model.pt` antes de ejecutar.
+El proyecto fue desarrollado utilizando tecnologías como:
+
+* Raspberry Pi
+* Python
+* OpenCV
+* Modelos de visión por computador
+* Google Colab
+* Sensores ambientales (DHT11)
+
+Dependiendo del módulo utilizado, pueden requerirse librerías adicionales.
 
 ---
 
-## Transmisión de datos
+## Estado del proyecto
 
-**[COMPLETAR]** — Protocolo utilizado, endpoint, estructura del payload JSON.
+Este repositorio corresponde a una versión de desarrollo del proyecto SIMVIA y contiene los diferentes componentes implementados durante el proceso de investigación y construcción del prototipo.
 
 ---
 
-## Funcionamiento general
+## Autores
 
-```
-Cámara → Frame → YOLO (detección) → Tracker (seguimiento)
-       → Counter (conteo por línea virtual)
-       → Speed Estimator (velocidad por puntos de referencia)
-       → Classifier (categoría: automóvil / motocicleta)
-       → Transmitter (envío a plataforma)
-       → Visualizer (dashboard web)
-```
+**Daniel Felipe Sarmiento Pilonieta**
+
+**Sebastián Adolfo Albornoz Villamil**
+
+**Director:** Jeyson Arley Castillo Bohórquez
+
+**Codirector:** Jaime Guillermo Barrero Pérez
+
+**Universidad Industrial de Santander (UIS)**
+
+Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones (E3T)
+
+2026
+
