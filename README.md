@@ -14,6 +14,8 @@ hardware/
 │
 ├── Plano de la carcasa
 │
+├── Prototipo formato step
+│
 ├── Modelo soporte Raspberry Pi
 │
 └── Tabla de protección IP
