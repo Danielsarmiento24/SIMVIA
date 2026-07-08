@@ -82,21 +82,3 @@ Dependiendo del módulo utilizado, pueden requerirse librerías adicionales.
 
 Este repositorio corresponde a una versión de desarrollo del proyecto SIMVIA y contiene los diferentes componentes implementados durante el proceso de investigación y construcción del prototipo.
 
----
-
-## Autores
-
-**Daniel Felipe Sarmiento Pilonieta**
-
-**Sebastián Adolfo Albornoz Villamil**
-
-**Director:** Jeyson Arley Castillo Bohórquez
-
-**Codirector:** Jaime Guillermo Barrero Pérez
-
-**Universidad Industrial de Santander (UIS)**
-
-Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones (E3T)
-
-2026
-
