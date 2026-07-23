@@ -79,9 +79,9 @@ Los modelos con mejor desempeño fueron comparados mediante métricas experiment
 
 | Modelo  | mAP50-95 | Captura (%) |     F1 |   FPS |
 | ------- | -------: | ----------: | -----: | ----: |
-| YOLO26s |   0.6309 |       90.48 | 0.9236 | 74.14 |
-| YOLOv8s |   0.6235 |       92.15 | 0.9305 | 62.85 |
-| YOLO11s |   0.6174 |       91.38 | 0.9335 | 74.19 |
+| YOLO26 |   0.6309 |       90.48 | 0.9236 | 74.14 |
+| YOLOv8 |   0.6235 |       92.15 | 0.9305 | 62.85 |
+| YOLO11 |   0.6174 |       91.38 | 0.9335 | 74.19 |
 
 Los resultados mostraron que la arquitectura **YOLO26** ofrecía el mejor equilibrio entre precisión, velocidad de procesamiento y eficiencia computacional para su implementación en sistemas embebidos.
 
