@@ -242,7 +242,7 @@ El repositorio de respaldo contiene:
 
 ### Google Drive
 
-[[Agregar enlace de Google Drive]](https://drive.google.com/drive/folders/17pgdPkkZd47S0xBEOZMQ_ufsW0VNBBb1?usp=sharing)
+[[Repositorio de Google Drive]](https://drive.google.com/drive/folders/17pgdPkkZd47S0xBEOZMQ_ufsW0VNBBb1?usp=sharing)
 
 ---
 
