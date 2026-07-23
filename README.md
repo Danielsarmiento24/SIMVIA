@@ -21,7 +21,7 @@ SIMVIA es un sistema embebido portátil capaz de detectar, clasificar y contar v
 
 ```
 SIMVIA/
-├── docs/           → Informe final, diagramas y documentación técnica
+├── docs/           → Informe final y documentación técnica
 ├── hardware/       → Planos de carcasa, esquemas eléctricos y lista de componentes
 ├── software/       → Código fuente del sistema (detección, conteo, velocidad, transmisión)
 └── results/        → Métricas, pruebas de validación y datos experimentales
