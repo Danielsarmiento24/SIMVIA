@@ -1,0 +1,18 @@
+# Versión exacta — generar con `pip freeze` en el venv de la Pi
+# (/home/pi/trafico/venv/bin/pip freeze) cuando esté disponible y reemplazar este archivo.
+# Lista de paquetes de terceros usados por el proyecto (servidor.py, calibrar.py, benchmark.py,
+# fans.py, dht11.py), sin pines de versión todavía.
+
+fastapi
+uvicorn
+requests
+opencv-python
+ultralytics
+ncnn
+psutil
+
+# Hardware específico de Raspberry Pi (opcional — el código degrada sin ellos, ver
+# try/except ImportError en fans.py y dht11.py):
+rpi-hardware-pwm
+adafruit-circuitpython-dht
+adafruit-blinka
