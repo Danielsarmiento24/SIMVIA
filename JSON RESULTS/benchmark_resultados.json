@@ -1,0 +1,74 @@
+[
+  {
+    "modelo": "yolov8n_ncnn_model",
+    "fps_promedio": 51.8,
+    "tiempo_inferencia_ms": 19.3,
+    "tiempo_min_ms": 18.8,
+    "tiempo_max_ms": 28.3,
+    "confianza_promedio": 85.7,
+    "detecciones_vehiculo": 0,
+    "ram_uso_mb": 55.4,
+    "tam_modelo_mb": 0.0,
+    "frames_analizados": 100
+  },
+  {
+    "modelo": "yolov8s_ncnn_model",
+    "fps_promedio": 23.4,
+    "tiempo_inferencia_ms": 42.6,
+    "tiempo_min_ms": 41.9,
+    "tiempo_max_ms": 44.8,
+    "confianza_promedio": 89.5,
+    "detecciones_vehiculo": 0,
+    "ram_uso_mb": 66.5,
+    "tam_modelo_mb": 0.0,
+    "frames_analizados": 100
+  },
+  {
+    "modelo": "yolov9t_ncnn_model",
+    "fps_promedio": 45.1,
+    "tiempo_inferencia_ms": 22.2,
+    "tiempo_min_ms": 20.4,
+    "tiempo_max_ms": 85.3,
+    "confianza_promedio": 78.0,
+    "detecciones_vehiculo": 0,
+    "ram_uso_mb": 13.2,
+    "tam_modelo_mb": 0.0,
+    "frames_analizados": 100
+  },
+  {
+    "modelo": "yolov10n_ncnn_model",
+    "fps_promedio": 55.9,
+    "tiempo_inferencia_ms": 17.9,
+    "tiempo_min_ms": 17.7,
+    "tiempo_max_ms": 19.2,
+    "confianza_promedio": 80.2,
+    "detecciones_vehiculo": 0,
+    "ram_uso_mb": 5.2,
+    "tam_modelo_mb": 0.0,
+    "frames_analizados": 100
+  },
+  {
+    "modelo": "yolo11n_ncnn_model",
+    "fps_promedio": 53.5,
+    "tiempo_inferencia_ms": 18.7,
+    "tiempo_min_ms": 18.5,
+    "tiempo_max_ms": 20.6,
+    "confianza_promedio": 87.0,
+    "detecciones_vehiculo": 0,
+    "ram_uso_mb": 0.0,
+    "tam_modelo_mb": 0.0,
+    "frames_analizados": 100
+  },
+  {
+    "modelo": "yolo26n_ncnn_model",
+    "fps_promedio": 55.9,
+    "tiempo_inferencia_ms": 17.9,
+    "tiempo_min_ms": 17.5,
+    "tiempo_max_ms": 28.0,
+    "confianza_promedio": 82.5,
+    "detecciones_vehiculo": 0,
+    "ram_uso_mb": 0.0,
+    "tam_modelo_mb": 0.0,
+    "frames_analizados": 100
+  }
+]
